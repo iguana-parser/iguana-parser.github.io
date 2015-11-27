@@ -1,0 +1,17 @@
+
+@media (min-width: 1024px){
+.container {
+    width: 1024px;
+}
+
+.carousel-inner {
+	width: 1024px;
+	margin: 0 auto;
+}
+}
+
+body {
+	width: 1024px;
+	margin: 0 auto;
+}
+
