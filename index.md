@@ -7,32 +7,21 @@
 <div style="width: 70%; height: 50%; float:left;" markdown="1">
 ## Iguana: A data-dependent parsing framework
 
+<span>
+Iguana is a parsing framework based on <a href="">data-dependent grammars</a>
+</span>
+
 <div id="example" style="margin-top:30px;">
 <ul class="nav nav-tabs">
-    <li class="active"><a href="#home">Example 1</a></li>
-    <li><a href="#menu1">Example 2</a></li>
-    <li><a href="#menu2">Example 3</a></li>
+    <li class="active"><a href="#example1">Example 1</a></li>
+    <li><a href="#example2">Example 2</a></li>
+    <li><a href="#example3">Example 3</a></li>
 </ul>
 
 <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h4>XML elements</h4>
-
-<pre>
-Element ::= s=STag Content ETag(s)
-STag    ::= '<' n:Name Attribute* '>' { n.yield }
-ETag(s) ::= '</' n:Name [n.yield == s] '>'
-</pre>
-
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
+    <div id="example1" class="tab-pane fade in active">{% include_relative example_1.md %}</div>
+    <div id="example2" class="tab-pane fade in active">{% include_relative example_2.md %}</div>
+    <div id="example3" class="tab-pane fade in active">{% include_relative example_3.md %}</div>
   </div>
 </div>
 
