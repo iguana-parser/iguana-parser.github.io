@@ -5,11 +5,17 @@
 {% include_relative navigation.md %}
     
 <div style="width: 70%; height: 50%; float:left;" markdown="1">
-## Iguana: A data-dependent parsing framework
+# Iguana: A data-dependent parsing framework
 
-<span>
-Iguana is a parsing framework based on <a href="">data-dependent grammars</a>
-</span>
+<div id="description" style="margin-top:40px;">
+Iguana is a parsing framework based on <a href="{{ site.baseurl }}/documentation.html#data_dependent_grammars">data-dependent grammars</a>.
+Data-dependent grammars extend context free grammars with arbitrary computation, 
+variable binding, and constraints. These powerful features enable construction of
+parsers for context-sensitive languages. We also use data-dependent grammars
+as a layer to implement different disambiguation constructs such as operator
+precedence.
+
+</div>
 
 <div id="example" style="margin-top:30px;">
 <ul class="nav nav-tabs">
@@ -20,8 +26,8 @@ Iguana is a parsing framework based on <a href="">data-dependent grammars</a>
 
 <div class="tab-content">
     <div id="example1" class="tab-pane fade in active">{% include_relative example_1.md %}</div>
-    <div id="example2" class="tab-pane fade in active">{% include_relative example_2.md %}</div>
-    <div id="example3" class="tab-pane fade in active">{% include_relative example_3.md %}</div>
+    <div id="example2" class="tab-pane fade">{% include_relative example_2.md %}</div>
+    <div id="example3" class="tab-pane fade">{% include_relative example_3.md %}</div>
   </div>
 </div>
 

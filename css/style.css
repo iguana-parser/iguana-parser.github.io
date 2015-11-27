@@ -8,11 +8,18 @@
 	width: 1024px;
 	margin: 0 auto;
 }
-}
 
 body {
 	width: 1024px;
 	margin: 0 auto;
+}
+
+#description {
+	font-size: 18px;
+}
+
+.h1, h1 {
+	font-size: 32px;
 }
 
 #example div.tab-content {
