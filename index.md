@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div style="width: 70%; float:left;" markdown="1">
+<div style="width: 70%; float:left; margin-top:2px;" markdown="1">
 # Iguana: A data-dependent parsing framework
 
 <div id="description" style="margin-top:40px;">
