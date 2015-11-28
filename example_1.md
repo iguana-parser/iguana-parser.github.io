@@ -1,56 +1,48 @@
 
-<h4>XML elements</h4>
-
-<p>XML is a popular data exchange format, and there are numerous XML parers
-for different programming languages. Most of these parsers are handwritten,
-rather than being generated from a grammar. The main problem is that the
-syntax of XML is not context-free.</p>
+<h4>A simple context-free grammar</h4>
 
 <p>
-The <a href="http://www.w3.org/TR/xml11/#NT-element">XML reference</a> has a very 
-straightforward grammar of XML. For example, an XML element is defined by the
-following context-free grammar: 
-</p>
-
-<pre>
-Element ::= STag Content ETag
-STag    ::= '<' Name Attribute* '>'
-ETag    ::= '</' Name '>'
-</pre>
-
-<p>
-<code>Element</code> defines an XML element with a start (<code>STag</code>)
-and end(<code>ETag</code>) tag. As can be seen, the names in the start and 
-end tags are not related to each other. For example, the following piece of 
-XML is valid according to this grammar.
-</p>
-
-<pre>
-&lt;note&gt;
-  &lt;to&gt;Bob&lt;/from&gt;
-  &lt;from&gt;Alice&lt;/to&gt;
-&lt;/note&gt;
-</pre>
-
-<p>
-As can be seen the start and end tags do not match. Below, the data-dependent
-version of XML elements is shown. This grammar specifies that the value of
-<code>Name</code> should be the same for the start and end tags.
-</p>
-
-<pre>
-Element ::= s=STag Content ETag(s)
-STag    ::= '<' n:Name Attribute* '>' { n.yield }
-ETag(s) ::= '</' n:Name [n.yield == s] '>'
-</pre>
-
-<p>
-Data-dependent grammars has an intuitive semantics. One can consider their
-runtime semantics as a recursive-descent parser with a guard for left recursion,
-and cubic runtime bound for the worse case. In this example, <code>s</code> holds
-the value parsed by <code>STag</code> and passes it the parametrized nonterminal
-<code>ETag</code>. Inside the <code>STag</code> rule, we need to get the text
-associated with <code>Name</code>.
+Iguana is a grammar interpreter, as opposed to a parser generator. This means
+that Iguana directly interprets an in-memory representation of a grammar.
+The following simple example shows how to encode a grammar in Iguana and run it.
 </p>
 
 
+{% highlight java %}
+
+// Building a grammar corresponding to A ::= A 'a' | 'a' 
+Nonterminal A = Nonterminal.withName("A");
+Terminal a = Terminal.from(Character.from('a'));
+Rule r1 = Rule.withHead(A).addSymbols(A, a).build();
+Grammar grammar = Grammar.builder().addRule(r1).build();
+
+Input input = Input.fromString("aaa");
+ParseResult result = Iguana.parse(input, grammar, startSymbol);
+if (result.isParseSuccess()) {
+    NonterminalNode sppfNode = result.asParseSuccess().getSPPFNode();
+    Tree tree = result.asParseSuccess().getTree();
+} else {
+   System.out.println(result.asParseFailure());
+}
+
+{% endhighlight %}
+
+<p>
+Iguana is build on top of the <a href="{{ site.baseurl }}/documentation.html#gll_parsing">Generalized LL (GLL)</a> parsing algorithm. GLL is a 
+top-down parsing algorithm that supports all context-free grammars and produces
+a <a href="{{ site.baseurl }}/documentation.html#binarized_sppf">binarized SPPF</a>.
+Binarized SPPFs, however, are part of the internal machinery of GLL, and are not 
+meant for the end user. Iguana provides support for conversion of binarized SPPF 
+terms that reflect the context-free grammar used for parsing. The SPPF and
+terms corresponding to the example above are shown below.
+
+</p>
+
+<div>
+	<div style="width: 43%; float:left;">
+		<img src="images/sppf.png" width="100%">
+	</div>
+	<div style="width: 50%; float:right;">
+		<img src="images/tree.png" width="100%">
+	</div>
+</div>
