@@ -2,13 +2,11 @@
 layout: base
 ---
 
-<h4>A simple context-free grammar</h4>
+##A simple context-free grammar
 
-<p>
-Iguana is a grammar interpreter, as opposed to a parser generator. This means
+<p>Iguana is a grammar interpreter, as opposed to a parser generator. This means
 that Iguana directly interprets an in-memory representation of a grammar.
-The following simple example shows how to encode a grammar in Iguana and run it.
-</p>
+The following simple example shows how to encode a grammar in Iguana and run it.</p>
 
 
 {% highlight java %}
@@ -30,16 +28,13 @@ if (result.isParseSuccess()) {
 
 {% endhighlight %}
 
-<p>
-Iguana is build on top of the <a href="{{ site.baseurl }}/documentation.html#gll_parsing">Generalized LL (GLL)</a> parsing algorithm. GLL is a 
+<p>Iguana is build on top of the <a href="{{ site.baseurl }}/documentation.html#gll_parsing">Generalized LL (GLL)</a> parsing algorithm. GLL is a 
 top-down parsing algorithm that supports all context-free grammars and produces
 a <a href="{{ site.baseurl }}/documentation.html#binarized_sppf">binarized SPPF</a>.
 Binarized SPPFs, however, are part of the internal machinery of GLL, and are not 
 meant for the end user. Iguana provides support for conversion of binarized SPPF 
 terms that reflect the context-free grammar used for parsing. The SPPF and
-terms corresponding to the example above are shown below.
-
-</p>
+terms corresponding to the example above are shown below.</p>
 
 <div>
 	<div style="width: 43%; float:left;">
