@@ -4,16 +4,18 @@
 {% include_relative header.md %}
 {% include_relative navigation.md %}
     
-<div style="width: 70%; height: 50%; float:left;" markdown="1">
+<div style="width: 70%; float:left;" markdown="1">
 # Iguana: A data-dependent parsing framework
 
 <div id="description" style="margin-top:40px;">
+<p>
 Iguana is a parsing framework based on <a href="{{ site.baseurl }}/documentation.html#data_dependent_grammars">data-dependent grammars</a>.
 Data-dependent grammars extend context free grammars with arbitrary computation, 
 variable binding, and constraints. These powerful features enable construction of
 parsers for context-sensitive languages. We also use data-dependent grammars
 as a layer to implement different disambiguation constructs such as operator
 precedence.
+</p>
 
 </div>
 

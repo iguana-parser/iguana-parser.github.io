@@ -16,6 +16,7 @@ body {
 
 #description {
 	font-size: 16px;
+	width: 700px;
 }
 
 .h1, h1 {
@@ -25,3 +26,12 @@ body {
 #example div.tab-content {
 	width: 700px; 
 }
+
+.nav-tabs {
+	width: 700px;
+}
+
+p {
+	text-align: justify;
+}
+
