@@ -1,3 +1,6 @@
+---
+layout: base
+---
 
 <h4>A simple context-free grammar</h4>
 
@@ -40,9 +43,9 @@ terms corresponding to the example above are shown below.
 
 <div>
 	<div style="width: 43%; float:left;">
-		<img src="images/sppf.png" width="100%">
+		<img src="../images/sppf.png" width="100%">
 	</div>
 	<div style="width: 50%; float:right;">
-		<img src="images/tree.png" width="100%">
+		<img src="../images/tree.png" width="100%">
 	</div>
 </div>

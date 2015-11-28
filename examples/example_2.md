@@ -1,3 +1,6 @@
+---
+layout: base
+---
 
 <h4>XML elements</h4>
 
