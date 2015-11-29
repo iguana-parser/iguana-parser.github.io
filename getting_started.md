@@ -3,10 +3,6 @@ layout: base
 ---
 
 <style type="text/css">
-	html {
-		overflow-y: scroll; 
-	}
-
 	.fixed {
 	    position: fixed;
 	}

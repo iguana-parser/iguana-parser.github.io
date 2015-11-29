@@ -26,7 +26,7 @@ our <a href="https://github.com/iguana-parser">Github</a> repository.</p>
 		<img src="images/architecture.png" width="100%">
 	</div>
 	<div style="width: 65%; float:right;">
-		<a href="https://cdn.rawgit.com/iguana-parser/papers/master/onward15.pdf"  target="_blank"><img src="images/vision.png" width="100%"></a>
+		<a href="https://cdn.rawgit.com/iguana-parser/papers/master/onward15.pdf"  target="_blank"><img src="images/vision.jpg" width="100%"></a>
 	</div>
 </div>
 

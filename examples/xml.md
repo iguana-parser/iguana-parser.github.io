@@ -6,7 +6,8 @@
 <p>XML is a popular data exchange format, and there are numerous XML parers
 for different programming languages. Most of these parsers are handwritten,
 rather than being generated from a grammar. The main problem is that the
-syntax of XML is not context-free.</p>
+syntax of XML is not context-free. In this example, we show how to write
+a data-dependent grammar for parsing XML.</p>
 
 <p>
 The <a href="http://www.w3.org/TR/xml11/#NT-element">XML reference</a> has a very 
@@ -49,10 +50,27 @@ ETag(s) ::= '</' n:Name [n.yield == s] '>'
 <p>
 Data-dependent grammars has an intuitive semantics. One can consider their
 runtime semantics as a recursive-descent parser with a guard for left recursion,
-and cubic runtime bound for the worse case. In this example, <code>s</code> holds
-the value parsed by <code>STag</code> and passes it the parametrized nonterminal
-<code>ETag</code>. Inside the <code>STag</code> rule, we need to get the text
-associated with <code>Name</code>.
+and cubic runtime bound for the worse case. In the data-dependent grammar of XML
+elements, we change the rules as follows:
+
+<ul>
+	<li>In the <code>Element</code> rule we introduce the variable <code>s</code> holds
+		the value parsed by <code>STag</code> and passes it the parametrized nonterminal
+		<code>ETag</code>. </li>
+
+	<li>In the <code>STag</code> rule we need to get the text
+		associated with <code>Name</code>. For this, we label the label <code>n:Name</code>,
+		where <code>n</code> is a variable referring to the parse tree node represented
+		by <code>Name</code>. The last element of the <code>STag</code> rule is its return
+		value. In this case, we return the string parsed by <code>Name</code>, using
+		the <code>yield</code> property of labels.</li>
+
+	<li>In the <code>ETag</code> we compare the start tag, passed via the parameter
+		<code>s</code> with the matched end tag, <code>n.yield</code>. If constraint
+		<code>[n.yield == s]</code> evaluates to false, the parsing path terminates.
+		This ensures that we only match balanced XML elements.
+	</li>
+</ul>
 </p>
 
 </div>
