@@ -35,3 +35,11 @@ p {
 	text-align: justify;
 }
 
+.navbar>.container .navbar-brand {
+	margin-left: -30px;
+}
+
+.tabs-left {
+	width: 100%;
+}
+

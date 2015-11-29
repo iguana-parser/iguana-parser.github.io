@@ -1,8 +1,7 @@
----
-layout: base
----
 
-<h4>XML elements</h4>
+<div markdown="1">
+
+## XML elements
 
 <p>XML is a popular data exchange format, and there are numerous XML parers
 for different programming languages. Most of these parsers are handwritten,
@@ -56,4 +55,4 @@ the value parsed by <code>STag</code> and passes it the parametrized nonterminal
 associated with <code>Name</code>.
 </p>
 
-
+</div>

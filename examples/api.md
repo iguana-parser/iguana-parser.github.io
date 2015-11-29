@@ -1,6 +1,5 @@
----
-layout: base
----
+
+<div markdown="1">
 
 ##A simple context-free grammar
 
@@ -43,4 +42,6 @@ terms corresponding to the example above are shown below.</p>
 	<div style="width: 50%; float:right;">
 		<img src="../images/tree.png" width="100%">
 	</div>
+</div>
+
 </div>
