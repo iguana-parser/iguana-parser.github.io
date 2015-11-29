@@ -4,7 +4,11 @@
 ##A simple context-free grammar
 
 <p>Iguana is a grammar interpreter, as opposed to a parser generator. This means
-that Iguana directly interprets an in-memory representation of a grammar.
+that Iguana directly interprets an in-memory representation of a grammar, and 
+there is no need to first generate a parser from the grammar specification.
+For example, consider the following simple grammar that encodes 
+
+
 The following simple example shows how to encode a grammar in Iguana and run it.</p>
 
 
