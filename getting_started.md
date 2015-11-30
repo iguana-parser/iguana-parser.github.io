@@ -8,11 +8,6 @@ layout: base
 	    offset: 40
 	});
 
-	$("#sidebar").affix({
-	    offset: {
-	      top: 60
-	    }
-	});
 </script>
 
 <div class="row">
@@ -20,32 +15,18 @@ layout: base
     <nav class="col-xs-3 bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked fixed">
             <li>
-                <a href="#GroupA">Download</a>
-            </li>
-    		<li>
-                <a href="#GroupB">XML elements</a>
-            </li>
-            <li>
-                <a href="#GroupC">Indentation rules</a>
-            </li>
-            <li>
-                <a href="#GroupD">Using Iguana Grammar API</a>
+                <a href="#Download">Download</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#Source">Syntax</a></li>
+                    <li><a href="#Binary">ParseTrees</a></li>
+                </ul>
             </li>
         </ul>
     </nav>
     <!--Main Content -->
     <div class="col-xs-9">
-        <section id="GroupA" class="group">
-			{% include_relative download.md %}
+        <section id="Download" class="group">
+             {% include_relative download.md %}
         </section>
-        <section id="GroupB" class="group">
-			{% include_relative examples/xml.md %}
-        </section>
-        <section id="GroupC" class="group">
-        	{% include_relative examples/haskell.md %}
-        </section>    
-        <section id="GroupD" class="group">
-        	{% include_relative examples/api.md %}
-        </section>    
     </div>
 </div>
