@@ -20,26 +20,26 @@ layout: base
     <nav class="col-xs-3 bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked fixed">
     		<li>
-                <a href="#GroupB">XML elements</a>
+                <a href="#XML">XML elements</a>
             </li>
             <li>
-                <a href="#GroupC">Indentation rules</a>
+                <a href="#OperatorePrecedence">Operator precedence</a>
             </li>
             <li>
-                <a href="#GroupD">Using Iguana Grammar API</a>
+                <a href="#Haskell">Indentation rules</a>
             </li>
         </ul>
     </nav>
     <!--Main Content -->
     <div class="col-xs-9">
-        <section id="GroupB" class="group">
+        <section id="XML" class="group">
 			{% include_relative examples/xml.md %}
         </section>
-        <section id="GroupC" class="group">
-        	{% include_relative examples/haskell.md %}
+        <section id="OperatorePrecedence" class="group">
+        	{% include_relative examples/operator_precedence.md %}
         </section>    
-        <section id="GroupD" class="group">
-        	{% include_relative examples/api.md %}
+        <section id="Haskell" class="group">
+        	{% include_relative examples/haskell.md %}
         </section>    
     </div>
 </div>
