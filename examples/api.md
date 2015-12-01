@@ -43,7 +43,7 @@ top-down parsing algorithm that supports all context-free grammars and produces
 a <a href="{{ site.baseurl }}/documentation.html#binarized_sppf">binarized SPPF</a>.
 Binarized SPPFs, however, are part of the internal machinery of GLL, and are not 
 meant for the end user. Iguana provides support for conversion of binarized SPPF 
-terms that reflect the context-free grammar used for parsing. We can access
+to terms that correspond to our grammar model. We can access
 the SPPF and parse tree from a <code>ParseResult</code> as follows.</p>
 
 {% highlight java %}

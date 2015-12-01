@@ -32,6 +32,11 @@ layout: base
     </nav>
     <!--Main Content -->
     <div class="col-xs-9">
+        <section class="group">
+            <h2>Examples</h2>
+            In this page we give some examples of using Iguana. The source code
+            of this examples is available <a href="https://github.com/iguana-parser/examples">here</a>.
+        </section>
         <section id="XML" class="group">
 			{% include_relative examples/xml.md %}
         </section>
