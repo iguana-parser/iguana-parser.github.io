@@ -1,5 +1,21 @@
 <div markdown="1">
 
+<style type="text/css">
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td, th {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid black;
+}
+</style>
+
 ### Operator Precedence
 
 <p>In this example we use high-level constructs for declarative specification
