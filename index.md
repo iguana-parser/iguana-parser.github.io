@@ -2,7 +2,11 @@
 layout: base
 ---
 
-<div style="width: 70%; float:left; margin-top:2px;" markdown="1">
+<div style="width: 25%; height: 50%; float:left; margin-top:0; margin-bottom:20;">
+    <img src="images/iguana.jpg" width="100%">
+</div>
+
+<div style="width: 70%; float:right; margin-top:2px;" markdown="1">
 # Iguana: A data-dependent parsing framework
 
 <div id="description" style="margin-top:40px;">
@@ -22,16 +26,13 @@ our <a href="https://github.com/iguana-parser">Github</a> repository.</p>
 </div>
 
 <div>
-	<div style="width: 35%; float:left; margin-top:52px;">
+	<div style="width: 37%; float:left; margin-top:52px;">
 		<img src="images/architecture.png" width="100%">
 	</div>
-	<div style="width: 65%; float:right;">
+	<div style="width: 63%; float:right;">
 		<a href="https://cdn.rawgit.com/iguana-parser/papers/master/onward15.pdf"  target="_blank"><img src="images/vision.jpg" width="100%"></a>
 	</div>
 </div>
 
 </div>
 
-<div style="width: 30%; height: 50%; float:right; margin-top:20; margin-bottom:20;">
-    <img src="images/iguana.jpg" width="100%">
-</div>
