@@ -40,18 +40,18 @@ layout: base
 ## Grammars
 
 <p>The grammars of programming languages written for Iguana can be found
-in [this repository](https://github.com/iguana-parser/grammars).
+in <a href="https://github.com/iguana-parser/grammars">this repository</a>.
 The grammars are extracted from their corresponding language specification manual. 
 For some grammars, we also provide a version of the grammar that has a natural 
 expression grammar which is declaratively disambiguated.<p>
 
-<p>The grammars are written in [Rascal](http://www.rascal-mpl.org/). The integration 
+<p>The grammars are written in <a href="http://www.rascal-mpl.org/">Rascal</a>. The integration 
 of Iguana into Rascal is a work in progress. To use the Iguana backend for Rascal, you 
-need the [Iguana branch](https://github.com/cwi-swat/rascal/tree/iguana) of Rascal. 
-We plan to gradually convert the grammars to the [reference syntax]().</p>
+need the <a href="https://github.com/cwi-swat/rascal/tree/iguana">Iguana branch</a> of Rascal. 
+We plan to gradually convert the grammars to the <a href=""></a>.</p>
 
 If you find a bug in the grammars, or wish to see a specific grammar
-in this list, please open an [issue](https://github.com/iguana-parser/grammars/issues) on Github.
+in this list, please open an <a href="https://github.com/iguana-parser/grammars/issues">issue</a> on Github.
 
 			<div id="Java" class="subgroup">
 				{% include_relative grammars/java.md %}
