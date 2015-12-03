@@ -1,6 +1,6 @@
 
 <div markdown="1">
 
-## Syntax
+### Syntax
 
 </div>
