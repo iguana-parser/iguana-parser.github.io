@@ -16,7 +16,7 @@ body {
 
 #description {
 	font-size: 16px;
-	width: 650px;
+	/*width: 650px;*/
 }
 
 .h1, h1 {
@@ -47,5 +47,18 @@ code {
 	color: black;
 	background-color: #F5F5F5;
 }
+
+.col-xs-3 {
+	width: 30%;
+}
+
+.col-xs-9 {
+	width: 70%;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
 
 
