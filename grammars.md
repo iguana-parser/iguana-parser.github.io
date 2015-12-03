@@ -48,7 +48,8 @@ expression grammar which is declaratively disambiguated.<p>
 <p>The grammars are written in <a href="http://www.rascal-mpl.org/">Rascal</a>. The integration 
 of Iguana into Rascal is a work in progress. To use the Iguana backend for Rascal, you 
 need the <a href="https://github.com/cwi-swat/rascal/tree/iguana">Iguana branch</a> of Rascal. 
-We plan to gradually convert the grammars to the <a href=""></a>.</p>
+We plan to gradually convert the grammars to 
+the <a href="http://localhost:4000/documentation.html#Syntax">reference syntax</a>.</p>
 
 If you find a bug in the grammars, or wish to see a specific grammar
 in this list, please open an <a href="https://github.com/iguana-parser/grammars/issues">issue</a> on Github.
@@ -76,6 +77,9 @@ in this list, please open an <a href="https://github.com/iguana-parser/grammars/
 			</div>
 			<div id="Scala" class="subgroup">
 				{% include_relative grammars/scala.md %}
+			</div>
+			<div style="height:550px;">
+				
 			</div>
         </section>
     </div>
