@@ -20,6 +20,7 @@ layout: base
                 	<li><a href="#ContextFree">Context-free</a></li>
                 	<li><a href="#DataDependent">Data-dependent</a></li>
                     <li><a href="#RegularExpressions">Regular expressions</a></li>
+                    <li><a href="#Layout">Layout</a></li>
                 </ul>
             </li>
     		<li>
@@ -51,6 +52,9 @@ layout: base
             </div>
             <div id="RegularExpressions" class="subgroup">
                 {% include_relative documentation/regex.md %}
+            </div>
+            <div id="Layout" class="subgroup">
+                {% include_relative documentation/layout.md %}
             </div>
         </section>
         <section id="Disambiguation" class="group">
