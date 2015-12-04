@@ -46,7 +46,7 @@ expressions is explained <a href="#RegularExpressions">here</a>.</p>
 	<li><code>A*</code>: Zero or more occurrence of A.</li>
 	<li><code>A+</code>: One or more occurrence of A.</li>
 	<li><code>A?</code>: Zero or one occurrence of A.</li>
-	<li><code>(&alpha;): </code>A group of non-empty list of symbols &alpha;.</li>
+	<li><code>(&alpha;)</code>: A group of non-empty list of symbols &alpha;.</li>
 	<li><code>A|B</code>: A or B. This operator, in contrast to the normal alternatives in 
 	context-free rules, can appear in the body of a rule.</li>
 </ul>
