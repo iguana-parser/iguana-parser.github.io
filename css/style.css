@@ -1,7 +1,12 @@
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
 	.container {
 	    width: 1024px;
+	}
+
+	.navbar {
+		width: 1024px;
+		margin: 0 auto;
 	}
 
 	.iguana {
@@ -9,12 +14,14 @@
 		height:50%; 
 		float:left; 
 		margin-right:10px;
+		margin-top: 10px;
 	}
 
 	.description {
-		width:68%; 
-		float:right;
-		font-size: 16px;
+	    width: 65%;
+	    float: right;
+	    font-size: 16px;
+	    margin-right: 20px;
 	}
 
 	.research {
@@ -50,10 +57,6 @@
 		width: 700px;
 	}
 
-	p {
-		text-align: justify;
-	}
-
 	.navbar>.container .navbar-brand {
 		margin-left: -20px;
 	}
@@ -62,17 +65,12 @@
 		width: 100%;
 	}
 
-	code {
-		color: black;
-		background-color: #F5F5F5;
-	}
-
 	.col-xs-3 {
 		width: 30%;
 	}
 
 	.col-xs-9 {
-		width: 70%;
+		width: 67%;
 	}
 
 	li {
@@ -80,7 +78,6 @@
 	}
 }
 
-/** iphone 5 */
 @media only screen and (max-width: 768px) {
 	
 	.container {
@@ -89,18 +86,35 @@
 
 	.description {
 		font-size: 16px;
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 	.architecture {
-		width: 60%; 
+		width: 80%; 
 		padding-top:15px;
 		margin: 0 auto;
 	}
 
 }
 
+#bs-example-navbar-collapse-1 {
+	font-weight: bold;
+	text-shadow: none;
+}
 
+code {
+	color: black;
+	background-color: #F5F5F5;
+}
+
+.navbar {
+	background-color: black;
+	background-image: none;
+}
+
+.container>.navbar-header {
+	margin-left: 5px;
+}
 
 
