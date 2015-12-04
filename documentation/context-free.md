@@ -32,7 +32,7 @@ simple grammar of statements:</p>
       : [a-z]+  
 
 
-As can be seen, each rule definition starts with a nonterminal followed by 
+<p>As can be seen, each rule definition starts with a nonterminal followed by 
 <code>:</code> followed by a list of alternatives which are separated by <code>|</code>.
 Moreover, rules must be preceded by a new line character, except for the
 first rule in the file. Terminals can be defined using either single or double quotes. To define a regular
@@ -51,5 +51,6 @@ expressions is explained <a href="#RegularExpressions">here</a>.</p>
 	context-free rules, can appear in the body of a rule.</li>
 </ul>
 
+<p>Note that <code>*</code> and <code>+</code> are not greedy in context-free rules.</p>
 
 </div>
