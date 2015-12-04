@@ -15,11 +15,11 @@ layout: base
     <nav class="col-xs-3 bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked fixed">
             <li>
-                <a href="#Iguana">Iguana</a>
+                <a href="#Syntax">Syntax</a>
                 <ul class="nav nav-stacked">
-                	<li><a href="#Syntax">Syntax</a></li>
-                	<li><a href="#Trees">ParseTrees</a></li>
-                	<li><a href="#Projects">Projects</a></li>
+                	<li><a href="#ContextFree">Context-free</a></li>
+                	<li><a href="#DataDependent">Data-dependent</a></li>
+                    <li><a href="#RegularExpressions">Regular expressions</a></li>
                 </ul>
             </li>
     		<li>
@@ -41,16 +41,16 @@ layout: base
 
     <!--Main Content -->
     <div class="col-xs-9">
-        <section id="Iguana" class="group">
-        	<h2>Iguana</h2>
-        	<div id="Syntax" class="subgroup">
-                {% include_relative documentation/syntax.md %}
+        <section id="Syntax" class="group">
+        	{% include_relative documentation/syntax.md %}
+        	<div id="ContextFree" class="subgroup">
+                {% include_relative documentation/context-free.md %}
             </div>
-            <div id="Trees" class="subgroup">
-                {% include_relative documentation/parse_trees.md %}
+            <div id="DataDependent" class="subgroup">
+                {% include_relative documentation/data-dependent.md %}
             </div>
-            <div id="Projects" class="subgroup">
-                {% include_relative documentation/projects.md %}
+            <div id="RegularExpressions" class="subgroup">
+                {% include_relative documentation/regex.md %}
             </div>
         </section>
         <section id="Disambiguation" class="group">

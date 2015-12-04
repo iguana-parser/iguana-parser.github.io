@@ -74,12 +74,12 @@
 
 /*Header formatting */
 .MainContent {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .group, .subgroup {
-    padding-top: 50px;
-    margin-top: -50px;
+    padding-top: 40px;
+    margin-top: -40px;
 }
 
 #sidebar.affix {

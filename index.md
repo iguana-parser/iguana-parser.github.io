@@ -2,11 +2,11 @@
 layout: base
 ---
 
-<div style="width:30%; height:50%; float:left; margin-top:20px; margin-right:10px;">
+<div style="width:30%; height:50%; float:left; margin-top:10px; margin-right:10px;">
     <img src="images/iguana.jpg" width="100%">
 </div>
 
-<div style="width:68%; float:right; margin-top:2px;" markdown="1">
+<div style="width:68%; float:right;" markdown="1">
 # Iguana: A data-dependent parsing framework
 
 <div id="description" style="margin-top:40px;">
