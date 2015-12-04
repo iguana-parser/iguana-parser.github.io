@@ -2,14 +2,12 @@
 layout: base
 ---
 
-<div style="width:30%; height:50%; float:left; margin-top:10px; margin-right:10px;">
+<div class="iguana">
     <img src="images/iguana.jpg" width="100%">
 </div>
 
-<div style="width:68%; float:right;" markdown="1">
+<div class="description" markdown="1">
 # Iguana: A data-dependent parsing framework
-
-<div id="description" style="margin-top:40px;">
 
 <p>Iguana is a parsing framework based on <a href="{{ site.baseurl }}/documentation.html#data_dependent_grammars">data-dependent grammars</a>.
 Data-dependent grammars extend context free grammars with arbitrary computation, 
@@ -23,19 +21,9 @@ and <a href="http://anastassija.github.io" target="_blank">Anastasia Izmaylova</
 Amsterdam. For source code and bug reports please visit 
 our <a href="https://github.com/iguana-parser">Github</a> repository.</p>
 
-</div>
 
-<!-- <div>
-	<div style="width: 37%; float:left; margin-top:52px;">
-		<img src="images/architecture.png" width="100%">
-	</div>
-	<div style="width: 63%; float:right;">
-		<a href="https://cdn.rawgit.com/iguana-parser/papers/master/onward15.pdf"  target="_blank"><img src="images/vision.jpg" width="100%"></a>
-	</div>
-</div> -->
-
-<div style="overflow: hidden; margin-top:50px;">
-	<div style="float:left; width:55%;">
+<div class="research">
+	<div class="papers">
 		<h4>Selected publications:</h4>
 		<ul style="padding-left:20px; padding-top:5px;">
 			<li><a href="https://cdn.rawgit.com/iguana-parser/papers/master/onward15.pdf">One Parser to Rule Them All</a></li>
@@ -43,7 +31,7 @@ our <a href="https://github.com/iguana-parser">Github</a> repository.</p>
 			<li><a href="https://cdn.rawgit.com/iguana-parser/papers/master/pepm16.pdf">Operator Precedence for Data-Dependent Grammars</a></li>
 		</ul>		
 	</div>	
-	<div style="float:right; width: 40%; text-align: center;">
+	<div class="architecture">
 		<h4>Architecture of Iguana:</h4>
 		<img src="images/architecture.jpg" width="100%" style="padding-top:15px;">
 	</div>
