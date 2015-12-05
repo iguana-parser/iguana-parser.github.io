@@ -1,5 +1,9 @@
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
+
+	.container {
+		width: 1024px;
+	}
 
 	.iguana {
 		width:30%; 
@@ -71,24 +75,85 @@
 	}
 }
 
-@media only screen and (max-width: 768px) {
-	
-	.description {
-		font-size: 16px;
-		margin-left: 20px;
-		margin-right: 20px;
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+
+	.container {
+		width: 800px;
 	}
 
-	.architecture {
-		width: 80%; 
-		padding-top:15px;
+	body {
+		width: 800px;
 		margin: 0 auto;
 	}
 
+		.iguana {
+		width:30%; 
+		height:50%; 
+		float:left; 
+		margin-top: 25px;
+	}
+
+	.description {
+	    width: 66%;
+	    float: right;
+	    font-size: 16px;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+
+	.research {
+		overflow: hidden; 
+		margin-top:50px;
+	}
+
+	.papers {
+		float:left; 
+		width:55%;
+	}
+
+	.architecture {
+		float:right; 
+		width: 40%; 
+		text-align: center;
+	}
+
 	h1 {
-		font-size: 24px;
+		font-size: 32px;
 		margin-bottom: 30px;
 	}
+
+	#example div.tab-content {
+		width: 700px; 
+	}
+
+	.nav-tabs {
+		width: 700px;
+	}
+
+	.navbar>.container .navbar-brand {
+		margin-left: -20px;
+	}
+
+	.tabs-left {
+		width: 100%;
+	}
+
+	.col-xs-3 {
+		width: 30%;
+	}
+
+	.col-xs-9 {
+		width: 67%;
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+
+@media only screen and (max-width: 799px) {
+	
 
 }
 
