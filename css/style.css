@@ -5,6 +5,11 @@
 		width: 1024px;
 	}
 
+	.main {
+		overflow: hidden; 
+		margin-top:20px;
+	}
+
 	.iguana {
 		width:30%; 
 		height:50%; 
@@ -81,12 +86,17 @@
 		width: 800px;
 	}
 
+	.main {
+		overflow: hidden; 
+		margin-top:20px;
+	}
+
 	body {
 		width: 800px;
 		margin: 0 auto;
 	}
 
-		.iguana {
+	.iguana {
 		width:30%; 
 		height:50%; 
 		float:left; 
@@ -154,6 +164,32 @@
 
 @media only screen and (max-width: 799px) {
 	
+	.container {
+		width: 100%;
+	}
+
+	.description {
+		font-size: 16px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.iguana {
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 35px;
+	}
+
+	.architecture {
+		width: 80%; 
+		padding-top:15px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
 
 }
 
