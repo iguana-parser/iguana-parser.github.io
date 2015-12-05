@@ -31,9 +31,9 @@ our <a href="https://github.com/iguana-parser">Github</a> repository.</p>
 			<li><a href="https://cdn.rawgit.com/iguana-parser/papers/master/pepm16.pdf">Operator Precedence for Data-Dependent Grammars</a></li>
 		</ul>		
 	</div>	
-	<div>
+	<div class="architecture">
 		<h4>Architecture of Iguana:</h4>
-		<img src="images/architecture.jpg" class="architecture">
+		<img src="images/architecture.jpg" width="100%">
 	</div>
 </div>
 
