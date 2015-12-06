@@ -73,6 +73,20 @@
 	li {
 		margin-bottom: 10px;
 	}
+
+	.icon {
+		width: 90%;
+	}
+
+	.navbar-toggle {
+		margin-top: 18px;
+	}
+
+	.main {
+		overflow: hidden; 
+		margin-top:20px;
+	}
+
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
@@ -155,6 +169,19 @@
 		margin-bottom: 10px;
 	}
 
+	.icon {
+		width: 90%;
+	}
+
+	.navbar-toggle {
+		margin-top: 18px;
+	}
+
+	.main {
+		overflow: hidden; 
+		margin-top:20px;
+	}
+
 }
 
 
@@ -187,6 +214,17 @@
 		width: 100%;
 	}
 
+	.icon {
+		width: 60%;
+		margin-top: -4px;
+	}
+
+	.main {
+		overflow: hidden; 
+		margin-top: -10px;
+	}
+
+
 }
 
 
@@ -213,10 +251,6 @@ code {
 	margin-top: 10px;
 }
 
-.navbar-toggle {
-	margin-top: 18px;
-}
-
 .navbar-collapse {
 	box-shadow: none;
 	border-top: none;
@@ -228,11 +262,6 @@ code {
 
 div.col-lg-12 {
 	padding-left: 25px;
-}
-
-.main {
-	overflow: hidden; 
-	margin-top:20px;
 }
 
 .row {
