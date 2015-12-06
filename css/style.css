@@ -154,6 +154,7 @@
 	li {
 		margin-bottom: 10px;
 	}
+
 }
 
 
@@ -217,9 +218,9 @@ code {
 	border-top: none;
 }
 
-.nav>li {
-/*    background-color: black;
-*/}
+#bs-example-navbar-collapse-1 .nav>li {
+    background-color: black;
+}
 
 div.col-lg-12 {
 	padding-left: 25px;
