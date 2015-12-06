@@ -1,5 +1,0 @@
-<div markdown="1">
-
-## Binarized SPPF
-
-</div>

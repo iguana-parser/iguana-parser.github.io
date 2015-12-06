@@ -28,14 +28,11 @@ layout: base
                 <ul class="nav nav-stacked">
                     <li><a href="#Lexical">Lexical</a></li>
                 	<li><a href="#OperatorPrecedence">Operator Precedence</a></li>
+                    <li><a href="#OperatorPrecedence">Indentation Sensitivity</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#Theory">Theory</a>
-                <ul class="nav nav-stacked">
-                    <li><a href="#GLL">GLL Parsing</a></li>
-                	<li><a href="#SPPF">Binarized SPPF</a></li>
-                </ul>
+                <a href="#ParseTrees">Parse Trees</a>
             </li>
         </ul>
     </nav>
@@ -66,14 +63,9 @@ layout: base
                 {% include_relative documentation/operator_precedence.md %}
             </div>
         </section>
-        <section id="Theory" class="group">
-        	<h2>Theory</h2>
-        	<div id="GLL" class="subgroup">
-                {% include_relative documentation/gll.md %}
-            </div>
-            <div id="SPPF" class="subgroup">
-                {% include_relative documentation/binarized_sppf.md %}
-            </div>
-        </section> 
+        <section id="ParseTrees" class="group">
+            <h2>Parse Trees</h2>
+            {% include_relative documentation/parse_trees.md %}
+        </section>
     </div>
 </div>
