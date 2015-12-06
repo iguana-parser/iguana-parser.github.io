@@ -5,11 +5,6 @@
 		width: 1024px;
 	}
 
-	.main {
-		overflow: hidden; 
-		margin-top:20px;
-	}
-
 	.iguana {
 		width:30%; 
 		height:50%; 
@@ -189,10 +184,6 @@
 
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 #bs-example-navbar-collapse-1 {
 	font-weight: bold;
@@ -221,7 +212,30 @@ code {
 	margin-top: 18px;
 }
 
-.nav>li {
-    background-color: black;
+.navbar-collapse {
+	box-shadow: none;
+	border-top: none;
 }
+
+.nav>li {
+/*    background-color: black;
+*/}
+
+div.col-lg-12 {
+	padding-left: 25px;
+}
+
+.main {
+	overflow: hidden; 
+	margin-top:20px;
+}
+
+.row {
+     margin-left: 0px; 
+     margin-right: 0px; 
+}
+
+
+
+
 
