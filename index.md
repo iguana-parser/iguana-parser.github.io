@@ -14,7 +14,7 @@ Data-dependent grammars extend context free grammars with arbitrary computation,
 variable binding, and constraints. These powerful features enable construction of
 parsers for context-sensitive languages. We also use data-dependent grammars
 as a layer to implement different disambiguation constructs such as 
-<a href="http://localhost:4000/examples.html#OperatorePrecedence">operator precedence</a>.</p>
+<a href="{{ site.baseurl }}/examples.html#OperatorePrecedence">operator precedence</a>.</p>
 
 <p>Iguana is created by <a href="http://afroozeh.github.io" target="_blank">Ali Afroozeh</a>
 and <a href="http://anastassija.github.io" target="_blank">Anastasia Izmaylova</a> at <a href="http://www.cwi.nl">CWI</a> 
