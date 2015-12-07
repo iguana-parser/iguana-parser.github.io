@@ -15,8 +15,8 @@ repositories:</p>
 - [parse-trees](https://github.com/iguana-parser/parse-trees)
 - [utils](https://github.com/iguana-parser/utils)
 
-<p>Iguana and utils are [maven](https://maven.apache.org) projects, while
-parse-trees is an [sbt](http://www.scala-sbt.org) project.
+<p>Iguana and utils are <a href="https://maven.apache.org">maven</a> projects, while
+parse-trees is an <a href="http://www.scala-sbt.org">sbt</a> project.
 To build maven projects run:</p>
 
     mvn -DskipTests install
