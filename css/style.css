@@ -87,6 +87,10 @@
 		margin-top:20px;
 	}
 
+	p {
+		font-size: 15px;
+	}
+
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
@@ -180,6 +184,10 @@
 	.main {
 		overflow: hidden; 
 		margin-top:20px;
+	}
+
+	p {
+		font-size: 15px;
 	}
 
 }
