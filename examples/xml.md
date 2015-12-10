@@ -42,7 +42,7 @@ ETag(s) ::= '</' n:Name [n.yield == s] '>'
 </pre>
 
 <p>This grammar specifies 
-that the string parsed by \code{Name} should be the same for the start and end 
+that the string parsed by <code>Name</code> should be the same for the start and end 
 tags. Data-dependent grammars have an intuitive semantics. One can consider their
 runtime semantics as a recursive-descent parser with a guard for left recursion,
 and cubic runtime bound for the worst case. In the data-dependent grammar of XML
