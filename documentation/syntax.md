@@ -3,6 +3,6 @@
 
 ### Syntax
 
-In this section, we discuss the syntax of Iguana.
+<p>In this section, we discuss the syntax of Iguana.</p>
 
 </div>
