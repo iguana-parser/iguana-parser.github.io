@@ -231,6 +231,10 @@
 		overflow: hidden; 
 		margin-top: -10px;
 	}
+
+	.navbar-brand {
+		padding-left: 0px;
+	}
 }
 
 
