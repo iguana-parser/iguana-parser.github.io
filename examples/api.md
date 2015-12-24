@@ -15,13 +15,11 @@ For example, consider the following simple grammar that encodes a list of a's:</
 it via the Iguana grammar API:</p>
 
 {% highlight java %}
-
 Nonterminal A = Nonterminal.withName("A");                // nonterminal A
 Terminal a = Terminal.from(Character.from('a'));          // terminal 'a'
 Rule r1 = Rule.withHead(A).addSymbols(A, a).build();      // rule A ::= A 'a'
 Rule r2 = Rule.withHead(A).addSymbols(a).build();         // rule A ::= 'a'
-Grammar grammar = Grammar.builder().addRule(r1).build();  // the resulting grammar
-
+Grammar grammar = Grammar.builder().addRule(r1).build();  // the resulting grammar		
 {% endhighlight %}
 
 <p>The following Java code shows how to parse an input string using this
