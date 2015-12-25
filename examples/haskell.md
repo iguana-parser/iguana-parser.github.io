@@ -8,12 +8,12 @@ language. In programming languages, such as Haskell and Python, whitespace is
 significant as it determines the meaning of programs.
 For example, consider the following Haskell function:</p>
 
-{% highlight haskell %}
+<pre><code class="language-haskell">
 f x = case x of
       0 -> 1
       _ -> x + 2
            + 4
-{% endhighlight %}
+</code></pre>
 
 <p>In Haskell, the keywords <code>do</code>, <code>let</code>, <code>of</code> 
 and <code>where</code> signal the start of a block. All statements that belong to 
@@ -37,12 +37,13 @@ alternative of the match, all tokens should be to the right of _.</p>
 shift <code>+ 4</code> to the left, so that it will be at the same column as
 <code>_</code>:
 
-{% highlight haskell %}
+<pre><code class="language-haskell">
 f x = case x of
       0 -> 1
       _ -> x + 2
       + 4
-{% endhighlight %}
+</code></pre>
+
 
 <p>In this version, <code>+ 4</code> does not belong to the second alternative anymore, as
 it is not to the right of its starting token. Rather it belongs to the outermost 
@@ -62,9 +63,9 @@ and the parser is constructed using an LALR parser generator.</p>
 <p>A block of declarations in Haskell 
 is defined by the following context-free grammar (we use a simplified grammar of Haskell):</p>
 
-<pre>
+<pre><code class="language-bison">
 Decls ::= '{' Decl (';' Decl)* '}'
-</pre>
+</code></pre>
 
 <p>This grammar says that a <code>Decls</code> starts and ends with curly braces, and
 inside the braces, <code>Decl</code>s are separated by simicolons. In Haskell, when curly
@@ -76,10 +77,13 @@ grammar. To have a declarative, single-phase specification of layout-sensitive
 constructs, Iguana presents three high-level constructs: <code>align</code>, <code>offside</code> and <code>ignore</code>.
 Using these constructs, we can redefine the rule above and add the new one as follows:</p>
 
-<pre>
+<div class="code-container">
+<pre><code class="language-bison">
 Decls ::= ignore '{' Decl (';' Decl)* '}'
         | align (offside Decl)*
-</pre>
+</code></pre>
+<a href="https://github.com/iguana-parser/examples/blob/master/src/resources/grammars/IndentationSensitive.iggy#L8-L9" target="_blank" class="github-link"></a>
+</div>
 
 The use of <code>ignore</code> states that the indentation rules should
 be ignored when the explicit delimiters are used, <code>align</code> states that 

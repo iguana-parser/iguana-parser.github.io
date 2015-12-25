@@ -15,11 +15,13 @@ following context-free rules:
 <p>
 
 
-<pre>
+<div class="code-container">
+<pre><code class="language-bison">
 Element ::= STag Content ETag
 STag    ::= '<' Name Attribute* '>'
 ETag    ::= '</' Name '>'
-</pre>
+</code></pre>
+</div>
 
 <p>In this grammar <code>Element</code> defines an XML element with a 
 start (<code>STag</code>) and end (<code>ETag</code>) tag. As can be seen, there 
@@ -27,20 +29,26 @@ is no constraint in this grammar to ensure that the start and end tags are the s
 For example, according to this grammar, the following example is valid XML:</p>
 
 
-<pre>
+<div class="code-container">
+<pre><code class="language-xml">
 &lt;note&gt;
   &lt;to&gt;Bob&lt;/from&gt;
   &lt;from&gt;Alice&lt;/to&gt;
 &lt;/note&gt;
-</pre>
+</code></pre>
+<a href="https://github.com/iguana-parser/examples/blob/master/src/test/scala/IguanaExamples.scala#L48-L51" target="_blank" class="github-link"></a>
+</div>
 
 <p>Now we show a data-dependent version of an XML element:</p>
 
-<pre>
+<div class="code-container">
+<pre><code class="language-bison">
 Element ::= s=STag Content ETag(s)
 STag    ::= '<' n:Name Attribute* '>' { n.yield }
 ETag(s) ::= '</' n:Name [n.yield == s] '>'
-</pre>
+</code></pre>
+<a href="https://github.com/iguana-parser/examples/blob/master/src/resources/grammars/XML.iggy#L8-L10" target="_blank" class="github-link"></a>
+</div>
 
 <p>This grammar specifies 
 that the string parsed by <code>Name</code> should be the same for the start and end 

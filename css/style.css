@@ -71,7 +71,8 @@
 	}
 
 	li {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
+		margin-top: 5px;
 	}
 
 	.icon {
@@ -290,5 +291,25 @@ div.col-lg-12 {
 .faqItem>p {
 	font-size: 15px;
 }
+
+.code-container {
+	position: relative;
+}
+
+.github-link {
+	background-image: url('../images/connector-gray.png');
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	display: none;
+}
+
+.github-link:hover {
+	background-image: url('../images/connector-black.png')
+}
+
 
 

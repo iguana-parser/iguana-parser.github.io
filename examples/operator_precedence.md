@@ -34,7 +34,9 @@ precedence and associativity table from its language specification:</p>
 
 <div style="width: 100%; overflow: hidden;">
 	<div style="width: 54%; float:left;">
-<pre>
+
+<div class="code-container">
+<pre><code class="language-bison">
 expr ::= expr '.' field  
        | expr expr
        | '-' expr
@@ -45,8 +47,9 @@ expr ::= expr '.' field
        | expr ';' expr
        | '(' expr ')'
        | num
-</pre>       
-	</div>
+</code></pre>
+</div>
+</div>
 
 <div style="width: 46%; float:right; padding-left:20px;" markdown="1">
 
@@ -66,7 +69,8 @@ expr ::= expr '.' field
 <p>We can encode this grammar in Iguana using high-level syntactic constructs
 <code>></code>, <code>left</code>, and <code>right</code> as follows:
 
-<pre>
+<div class="code-container">
+<pre><code class="language-bison">
 expr ::= expr '.' field  
        > expr expr                           left
        > '-' expr
@@ -76,7 +80,9 @@ expr ::= expr '.' field
        > expr ';' expr                       right
        | '(' expr ')'
        | num	
-</pre>
+</code></pre>
+<a href="https://github.com/iguana-parser/examples/blob/master/src/resources/grammars/Expression.iggy#L4-L12" target="_blank" class="github-link"></a>
+</div>
 
 <p>As can be seen, operator precedence is defined by <code>></code> between
 two alternatives, and it is decreasing, i.e., the first alternative has the highest
