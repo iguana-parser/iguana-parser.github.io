@@ -61,4 +61,18 @@ result match {
 <a href="https://github.com/iguana-parser/examples/blob/master/src/test/scala/IguanaExamples.scala#L21-L25" target="_blank" class="github-link"></a>
 </div>
 
+<p>The SPPF and terms corresponding to the example above are shown below. More information
+about terms can be found <a href="http://localhost:4000/documentation.html#ParseTrees">here</a>.</p>
+
+<div style="overflow:hidden;">
+	<div style="width: 43%; float:left;">
+		<img src="../images/sppf.png" width="100%">
+	</div>
+	<div style="width: 50%; float:right;">
+		<img src="../images/tree.png" width="100%">
+	</div>
+</div>
+
+
+
 </div>
