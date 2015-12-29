@@ -3,17 +3,15 @@
 
 ## For developers
 
-<p>Iguana is under active development and APIs and implementations are subject to
+<p>Iguana is under active development, and therefore its API is subject to
 frequent change. You can use both <a href="https://www.jetbrains.com/idea/">IntelliJ</a> 
 and <a href="https://eclipse.org/home/index.php">Eclipse</a> to develop Iguana.</p>
 
 <ul>
 	<li>
 		<p>We use <a href="https://www.jetbrains.com/idea/download/"> IntelliJ IDEA 15</a>
-		(with Scala plugin) for developing Iguana. 
-		The Intellij IDEA project information are checked into
-		Git, so if you checkout the repository and open <code>Iguana</code>, it should
-		work out of the box. The only thing you need to set is the Scala and Java SDKs
+		(with Scala plugin) for developing Iguana. All you need to do is to checkout the Iguana repository 
+		and import it as an SBT project into IntelliJ. You may also need to set is the Scala and Java SDKs
 		and reload the projects in the SBT view of IntelliJ IDEA. If you encounter any 
 		problems in using IntelliJ IDEA for developing Iguana, please open an issue on <a href="https://github.com/iguana-parser/iguana">Github</a>.</p>		
 	</li>
