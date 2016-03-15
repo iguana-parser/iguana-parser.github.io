@@ -25,7 +25,8 @@ our <a href="https://github.com/iguana-parser">Github</a> repository.</p>
 <div class="research">
 	<div class="papers">
 		<h4>Selected publications:</h4>
-		<ul style="padding-left:20px; padding-top:5px;">
+		<ul style="padding-left:20px; padding-top:5px; font-size: 15px;">
+			<li><a href="https://cdn.rawgit.com/iguana-parser/papers/master/cc16.pdf">Iguana: A Practical Data-Dependent Parsing Framework</a></li>
 			<li><a href="https://cdn.rawgit.com/iguana-parser/papers/master/onward15.pdf">One Parser to Rule Them All</a></li>
 			<li><a href="https://cdn.rawgit.com/iguana-parser/papers/master/cc15.pdf">Faster, Practical GLL Parsing</a></li>
 			<li><a href="https://cdn.rawgit.com/iguana-parser/papers/master/pepm16.pdf">Operator Precedence for Data-Dependent Grammars</a></li>

@@ -5,8 +5,7 @@
 
 <p>Iguana is written in Java and Scala. New development is done in Scala,
 and eventually all Java code will be converted to Scala. Iguana is under active 
-development and we plan the first public release by 15 
-March 2016.</p>
+development and we plan the first binary release soon.</p>
 
 <p>The current version of Iguana requires:</p>
 
